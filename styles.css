@@ -1,13 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=BBH+Sans+Hegarty&family=Roboto:wght@900&display=swap');
+
+:root{
+    font-size: 16px;
+
+    --logo-header-font-size: 15rem;
+    --h1-font-size: 15rem;
+}
+
+
 body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    display: flex;
     margin: 0px;
     padding: 0px;
 
     box-sizing: border-box;
 }
 
+h1{
+    font-size: var(--h1-font-size);
+}
+
+.image-section{
+    display: inline-block;
+    position: relative;
+
+    vertical-align: top;
+    
+}
 
 .image-section > img{
     display: block;
     height: 100vh;
     width: auto;
 }
+
+
+#logo-header-text, #logo-header{
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+
+
+    top: calc(50vh - var(--logo-header-font-size));
+}
+
+#logo-header{
+    opacity: 0.5;
+    background-color: black;
+}
+
+#logo-header-text{
+    font-family: "BBH Sans Bartle", system-ui;
+    
+    display: flex;
+    font-size: var(--logo-header-font-size);
+    color: white;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+
+
